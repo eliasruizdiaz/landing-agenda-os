@@ -29,8 +29,8 @@ export default function Home() {
       <section className="relative overflow-hidden pt-20 pb-32">
         {/* Background gradient */}
         <div className="absolute inset-0 -z-10">
-          <div className="absolute top-0 right-0 w-96 h-96 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob" style={{backgroundColor: '#9d6cff'}}></div>
-          <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000" style={{backgroundColor: '#ffbd59'}}></div>
+          <div className="absolute top-0 right-0 w-96 h-96 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob" style={{backgroundColor: '#ffbd59'}}></div>
+          <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000" style={{backgroundColor: '#9d6cff'}}></div>
         </div>
 
         <div className="container">
@@ -174,7 +174,7 @@ export default function Home() {
               <div key={idx} className="relative">
                 <div className={`absolute inset-0 bg-gradient-to-r ${layer.color} rounded-xl opacity-10`}></div>
                 <div className="relative p-8 bg-white rounded-xl border border-slate-200">
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4" style={{backgroundImage: layer.color === 'from-blue-600 to-blue-700' ? 'linear-gradient(to right, #9d6cff, #9d6cff)' : layer.color === 'from-indigo-600 to-indigo-700' ? 'linear-gradient(to right, #9d6cff, #ffbd59)' : 'linear-gradient(to right, #ffbd59, #9d6cff)'}}>
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg mb-4" style={{backgroundImage: layer.color === 'from-blue-600 to-blue-700' ? 'linear-gradient(to right, #ffbd59, #ffbd59)' : layer.color === 'from-indigo-600 to-indigo-700' ? 'linear-gradient(to right, #ffbd59, #9d6cff)' : 'linear-gradient(to right, #9d6cff, #ffbd59)'}}>
                     {layer.number}
                   </div>
                   <h3 className="text-xl font-bold text-slate-900 mb-3">{layer.title}</h3>
@@ -218,8 +218,8 @@ export default function Home() {
                   onMouseLeave={() => setHoveredBenefit(null)}
                   className="p-8 bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl border border-slate-200 hover:border-blue-400 hover:shadow-lg transition-all duration-300 cursor-pointer"
                 >
-                  <Icon className="w-10 h-10 mb-4" style={{color: '#9d6cff'}} />
-                  <div className="text-3xl font-bold mb-2" style={{color: '#9d6cff'}}>{benefit.stat}</div>
+                  <Icon className="w-10 h-10 mb-4" style={{color: '#ffbd59'}} />
+                  <div className="text-3xl font-bold mb-2" style={{color: '#ffbd59'}}>{benefit.stat}</div>
                   <h3 className="text-lg font-semibold text-slate-900 mb-2">{benefit.title}</h3>
                   <p className="text-slate-600">{benefit.desc}</p>
                 </div>
@@ -284,22 +284,22 @@ export default function Home() {
               <div className="flex-grow text-white">
                 <h3 className="text-3xl font-bold mb-4">Creado por Elias Ruiz Diaz</h3>
                 <p className="text-lg text-slate-300 mb-4 leading-relaxed">
-                  Consultor Senior con <span className="font-bold" style={{color: '#ffbd59'}}>+13 anos de experiencia</span> en Genesys, automatizacion de contact centers y sistemas de IA conversacional.
+                  Consultor Senior con <span className="font-bold" style={{color: '#9d6cff'}}>+13 anos de experiencia</span> en Genesys, automatizacion de contact centers y sistemas de IA conversacional.
                 </p>
                 <p className="text-slate-300 mb-6">
                   He ayudado a empresas globales a transformar sus operaciones de atencion al cliente. Agenda OS es el resultado de anos de experiencia implementando soluciones robustas que funcionan en el mundo real.
                 </p>
                 <div className="flex gap-4">
                   <div>
-                    <div className="text-2xl font-bold" style={{color: '#ffbd59'}}>13+</div>
+                    <div className="text-2xl font-bold" style={{color: '#9d6cff'}}>13+</div>
                     <div className="text-sm text-slate-400">Anos en Genesys</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold" style={{color: '#ffbd59'}}>100+</div>
+                    <div className="text-2xl font-bold" style={{color: '#9d6cff'}}>100+</div>
                     <div className="text-sm text-slate-400">Implementaciones</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold" style={{color: '#ffbd59'}}>Global</div>
+                    <div className="text-2xl font-bold" style={{color: '#9d6cff'}}>Global</div>
                     <div className="text-sm text-slate-400">Mercados Atendidos</div>
                   </div>
                 </div>
@@ -395,13 +395,13 @@ export default function Home() {
               <div key={idx} className="p-8 bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl border border-slate-200">
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <span key={i} style={{color: '#ffbd59'}}>★</span>
+                    <span key={i} style={{color: '#9d6cff'}}>★</span>
                   ))}
                 </div>
-                <p className="text-2xl font-bold mb-2" style={{color: '#9d6cff'}}>{testimonial.result}</p>
+                <p className="text-2xl font-bold mb-2" style={{color: '#ffbd59'}}>{testimonial.result}</p>
                 <p className="text-slate-900 font-semibold mb-1">{testimonial.name}</p>
                 <p className="text-slate-600 text-sm mb-3">{testimonial.detail}</p>
-                <p className="font-semibold text-sm" style={{color: '#9d6cff'}}>{testimonial.metric}</p>
+                <p className="font-semibold text-sm" style={{color: '#ffbd59'}}>{testimonial.metric}</p>
               </div>
             ))}
           </div>
